@@ -85,6 +85,7 @@ function readStock(data){
 
 //function to update food stock and last fed time
 function feedDog(){
+    if(foodS > 0){
   dog.addImage(happyDog);
 
   foodObj.updateFoodStock(foodObj.getFoodStock()-1);
@@ -93,6 +94,7 @@ function feedDog(){
     FeedTime:hour(),
     gameState:"Hungry"
   })
+    }
 }
 
 //function to add food in stock
