@@ -26,7 +26,8 @@ class Food {
     display(){
         background(46,139,87);
         fill(0, 0, 0)
-        text("Food Remaining: "+ foodS, 200, 480)
+        textSize(17)
+        text("Food Remaining: "+ foodS, 100, 480)
         fill(255,255,254);
         textSize(15);
         if(lastFed>=12){
